@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Explainer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="nav-link">Home</a>
+            <a href="/explainer" class="nav-link active">Model Explainer</a>
+            <a href="/api-docs" class="nav-link">API Docs</a>
+            <a href="/about" class="nav-link">About</a>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <h1>Model Explainer</h1>
+        <form id="predict-form">
+            <div class="mb-3">
+                <label for="feature1" class="form-label">Feature 1</label>
+                <input type="number" class="form-control" id="feature1" name="feature1" required>
+            </div>
+            <div class="mb-3">
+                <label for="feature2" class="form-label">Feature 2</label>
+                <input type="number" class="form-control" id="feature2" name="feature2" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+        <div id="prediction-result" class="mt-4"></div>
+    </main>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
